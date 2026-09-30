@@ -1,0 +1,15 @@
+/* ===== FOOTER ===== */
+.footer{background:var(--negro);border-top:1px solid rgba(255,255,255,.08);padding:50px 0 40px;font-size:.85rem;color:var(--gris)}
+.f-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:36px}
+.f-brand p{max-width:300px;margin-top:12px}
+.f-cols{display:flex;gap:60px;flex-wrap:wrap}
+.f-cols h4{color:var(--crema);font-size:.85rem;margin-bottom:12px;font-weight:600}
+.f-cols a{display:block;padding:4px 0;transition:color .3s}
+.f-cols a:hover{color:var(--crema)}
+.f-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* WhatsApp flotante */
+.wa{position:fixed;right:22px;bottom:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 34px rgba(0,0,0,.35);transform:scale(0);transition:transform .7s var(--ease)}
+.wa.show{transform:scale(1)}
+.wa svg{width:30px;height:30px;fill:#fff}
+.footer .logo{color:var(--crema)}

@@ -1,0 +1,25 @@
+/* ===== GRÁFICOS (método) ===== */
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.chart-card{background:var(--carbon);border:1px solid rgba(255,255,255,.07);border-radius:28px;padding:30px 28px 22px;min-width:0}
+.chart-card h3{font-size:1.45rem}
+.chart-card .sub{color:var(--gris);font-size:.92rem;margin:6px 0 18px}
+.chart{position:relative}
+.chart svg{width:100%;height:auto;display:block;overflow:visible}
+.chart .grid line{stroke:rgba(245,242,234,.08)}
+.chart .axis text{fill:var(--gris);font-size:12px;font-family:Inter,system-ui,sans-serif;font-variant-numeric:tabular-nums}
+.chart .line{fill:none;stroke:var(--naranja);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.chart .area{opacity:0;transition:opacity 1.2s .9s}
+.chart.in .area{opacity:1}
+.chart .dot{fill:var(--naranja);stroke:var(--carbon);stroke-width:2;opacity:0;transition:opacity .4s}
+.chart.in .dot.end{opacity:1;transition-delay:1.5s}
+.chart .dot.hl{opacity:1}
+.chart .bar{fill:var(--lima);transform:scaleY(0);transform-box:fill-box;transform-origin:bottom;transition:transform 1s var(--ease),opacity .2s}
+.chart.in .bar{transform:none}
+.chart .bar.dim{opacity:.35}
+.chart .xh{stroke:rgba(245,242,234,.25);stroke-dasharray:3 3;opacity:0}
+.chart .xh.show{opacity:1}
+.tip{position:absolute;pointer-events:none;background:var(--crema);color:var(--negro);font-size:.8rem;padding:7px 10px;border-radius:10px;white-space:nowrap;transform:translate(-50%,-120%);opacity:0;transition:opacity .15s;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.tip b{font-weight:700}
+.tip.show{opacity:1}
+.chart-foot{margin-top:12px;font-size:.78rem;color:var(--gris-2)}
+@media (max-width:900px){.charts{grid-template-columns:1fr}}

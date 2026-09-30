@@ -1,0 +1,18 @@
+/* ===== SERVICIOS EN HORIZONTAL ===== */
+.h-sec{background:var(--blanco);color:var(--negro)}
+.h-sec .sticky{flex-direction:column;align-items:flex-start;justify-content:center}
+.h-head{padding:0 max(22px,calc((100vw - 1080px)/2 + 22px));margin-bottom:40px}
+.h-head h2{font-size:clamp(2.4rem,6vw,5rem);margin-top:8px}
+.h-track{display:flex;gap:22px;padding:0 max(22px,calc((100vw - 1080px)/2 + 22px));will-change:transform}
+.card{flex:none;width:min(78vw,440px);height:min(60vh,520px);border-radius:32px;padding:40px 36px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.card .tag{font-size:.85rem;font-weight:600;opacity:.75}
+.card h3{font-size:clamp(2rem,3.4vw,2.8rem);margin:10px 0 14px}
+.card p{font-size:1.05rem;line-height:1.45;opacity:.82;max-width:340px}
+.card .big{position:absolute;right:-10px;bottom:-40px;font-family:"Space Grotesk";font-weight:700;font-size:15rem;line-height:1;letter-spacing:-.08em;opacity:.12}
+.card .more{position:relative;z-index:1;font-weight:600;font-size:.95rem}
+.c1{background:linear-gradient(160deg,#FF7A3D,#E0400A);color:#fff}
+.c2{background:var(--arena)}
+.c3{background:var(--negro);color:var(--crema)}
+.c3 h3{color:var(--lima)}
+.c4{background:linear-gradient(160deg,#1c1c1c,#2b1409);color:var(--crema)}
+.c4 .big{color:var(--naranja);opacity:.35}

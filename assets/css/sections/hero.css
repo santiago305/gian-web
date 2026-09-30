@@ -1,0 +1,13 @@
+/* ===== HERO CON SCROLL ===== */
+.hero-scroll{height:200vh;background:var(--negro)}
+.hero-scroll.short{height:170vh}
+.hero-scroll .sticky{flex-direction:column;text-align:center;padding:0 22px}
+.hero-inner{will-change:transform,opacity;position:relative;z-index:2}
+.kicker{font-size:clamp(1rem,1.6vw,1.3rem);font-weight:600;color:rgba(245,242,234,.85);margin-bottom:12px}
+.hero-title{font-size:clamp(3.6rem,15vw,13rem);font-weight:700;letter-spacing:-.06em;padding:0 .04em .04em}
+.hero-title.mid{font-size:clamp(3.2rem,11vw,9.5rem)}
+.hero-sub{font-size:clamp(1.15rem,2.2vw,1.65rem);font-weight:500;color:rgba(245,242,234,.7);max-width:720px;margin:20px auto 34px;line-height:1.35}
+.halo{position:absolute;width:70vmax;height:70vmax;border-radius:50%;background:radial-gradient(circle,rgba(255,90,31,.28),transparent 60%);top:50%;left:50%;transform:translate(-50%,-30%);pointer-events:none;will-change:transform,opacity}
+.scroll-cue{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);font-size:.75rem;color:var(--gris);letter-spacing:.08em;z-index:2}
+.scroll-cue::after{content:"";display:block;width:1px;height:34px;margin:10px auto 0;background:linear-gradient(var(--gris),transparent);animation:cue 2s var(--ease) infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}

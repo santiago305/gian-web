@@ -1,0 +1,20 @@
+/* ===== RESPONSIVE ===== */
+@media (max-width:900px){
+  .links{display:none}
+  .menu-btn{display:block}
+  .sec{padding:100px 0}
+  .stats{grid-template-columns:1fr 1fr;gap:40px 20px}
+  .trio,.plans,.oneoff{grid-template-columns:1fr}
+  .plan .scope{min-height:0}
+  .contact{grid-template-columns:1fr}
+  .s-card{grid-template-columns:1fr;gap:14px;padding:34px}
+}
+@media (max-width:520px){
+  .row2{grid-template-columns:1fr}
+  .form{padding:28px 22px}
+  .nav .pill{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .intro,.fade,.stat{opacity:1;transform:none;filter:none;transition:none}
+  .manifest .wd{color:var(--crema)}
+}

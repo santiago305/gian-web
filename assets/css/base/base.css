@@ -1,0 +1,31 @@
+/* =========================================================
+   Alexis Yacila · Trafficker digital
+   Base: colores, tipografía, reset y secciones
+   ========================================================= */
+:root{
+  --negro:#0B0B0B; --carbon:#161616; --carbon-2:#1E1E1E;
+  --crema:#F5F2EA; --blanco:#FBFAF7; --arena:#ECE8DE;
+  --naranja:#FF5A1F; --naranja-2:#FF9A5C; --lima:#C5FF45;
+  --gris:#86868B; --gris-2:#5A5A5E;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:Inter,-apple-system,system-ui,sans-serif;background:var(--negro);color:var(--crema);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.5}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+h1,h2,h3,.display{font-family:"Space Grotesk",sans-serif;letter-spacing:-.035em;line-height:1}
+.grad{background:linear-gradient(100deg,var(--naranja) 10%,var(--naranja-2) 55%,var(--lima) 115%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.eyebrow{font-size:1rem;font-weight:600;color:var(--naranja)}
+
+/* Secciones */
+.sec{padding:140px 0;position:relative}
+.light{background:var(--blanco);color:var(--negro)}
+.cream{background:var(--arena);color:var(--negro)}
+.dark{background:var(--negro);color:var(--crema)}
+.black{background:#000;color:var(--crema)}
+.head{text-align:center;margin-bottom:70px}
+.head h2{font-size:clamp(2.4rem,6vw,5rem);margin-top:8px}
+.head p{font-size:clamp(1.1rem,1.8vw,1.35rem);max-width:640px;margin:18px auto 0;font-weight:500;opacity:.7}

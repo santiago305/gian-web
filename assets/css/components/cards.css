@@ -1,0 +1,15 @@
+/* ===== TRIPLE COLUMNA (estrategia/ejecución/optimización, reto/solución/resultado) ===== */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.t-card{background:#fff;border-radius:28px;padding:40px 32px;box-shadow:0 2px 30px rgba(0,0,0,.05);transition:transform .6s var(--ease),box-shadow .6s}
+.t-card:hover{transform:scale(1.03);box-shadow:0 20px 60px rgba(0,0,0,.1)}
+.dark .t-card{background:var(--carbon);box-shadow:none}
+.t-card .num{font-family:"Space Grotesk";font-weight:700;color:var(--naranja);font-size:.95rem}
+.t-card .ico{font-size:2.4rem;margin-bottom:20px}
+.t-card h3{font-size:1.7rem;margin:14px 0 10px}
+.t-card p{opacity:.7;font-size:1.04rem}
+.note{text-align:center;margin-top:44px;font-size:.95rem;opacity:.6;max-width:640px;margin-left:auto;margin-right:auto}
+
+/* Chips */
+.chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:40px}
+.chip{padding:9px 18px;border-radius:999px;font-size:.92rem;font-weight:500;border:1px solid rgba(17,17,17,.15)}
+.dark .chip,.black .chip{border-color:rgba(245,242,234,.18)}

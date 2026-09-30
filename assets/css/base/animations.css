@@ -1,0 +1,6 @@
+/* ===== ANIMACIÓN DE ENTRADA (blur + fade) ===== */
+.intro{opacity:0;transform:translateY(30px) scale(.98);filter:blur(16px);transition:opacity 1.6s var(--ease),transform 1.6s var(--ease),filter 1.6s var(--ease)}
+.ready .intro{opacity:1;transform:none;filter:blur(0)}
+.ready .i2{transition-delay:.2s}.ready .i3{transition-delay:.4s}.ready .i4{transition-delay:.6s}
+.fade{opacity:0;transform:translateY(60px);transition:opacity 1.3s var(--ease),transform 1.3s var(--ease);transition-delay:var(--d,0s)}
+.fade.in{opacity:1;transform:none}

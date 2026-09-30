@@ -1,0 +1,14 @@
+/* ===== FAQ ===== */
+.faq{max-width:800px;margin:0 auto}
+.qa{border-bottom:1px solid rgba(255,255,255,.12)}
+.light .qa,.cream .qa{border-color:rgba(0,0,0,.1)}
+.qa button{all:unset;cursor:pointer;width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 0;font-size:clamp(1.1rem,2vw,1.3rem);font-weight:600}
+.qa .pl{flex:none;width:20px;height:20px;position:relative;transition:transform .5s var(--ease)}
+.qa .pl::before,.qa .pl::after{content:"";position:absolute;left:0;top:9px;width:20px;height:2px;background:var(--naranja);border-radius:2px}
+.qa .pl::after{transform:rotate(90deg);transition:transform .5s var(--ease)}
+.qa.open .pl{transform:rotate(180deg)}
+.qa.open .pl::after{transform:rotate(0)}
+.ans{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--ease)}
+.qa.open .ans{grid-template-rows:1fr}
+.ans>div{overflow:hidden}
+.ans p{padding-bottom:26px;opacity:.72;font-size:1.05rem}

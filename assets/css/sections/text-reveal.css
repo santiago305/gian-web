@@ -1,0 +1,6 @@
+/* ===== TEXTO QUE SE ILUMINA ===== */
+.manifest-sec{height:250vh;background:var(--negro)}
+.manifest{font-family:"Space Grotesk";font-weight:600;font-size:clamp(1.9rem,4.6vw,3.9rem);line-height:1.12;letter-spacing:-.03em;max-width:1000px;padding:0 22px}
+.manifest .wd{color:rgba(245,242,234,.14);transition:color .4s ease}
+.manifest .wd.lit{color:var(--crema)}
+.manifest .wd.acc.lit{color:var(--naranja)}

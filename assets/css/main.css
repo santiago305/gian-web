@@ -1,0 +1,38 @@
+/* =========================================================
+   Alexis Yacila · Trafficker digital
+   HOJA PRINCIPAL: importa cada módulo en orden.
+   Para editar una parte, abre su archivo.
+   ========================================================= */
+
+/* Base */
+@import url("base/base.css");            /* colores, tipografía, reset, secciones */
+@import url("base/animations.css");      /* entrada con desenfoque y aparición */
+
+/* Layout */
+@import url("layout/nav.css");           /* menú superior y menú móvil */
+@import url("layout/footer.css");        /* pie de página y botón de WhatsApp */
+
+/* Componentes reutilizables */
+@import url("components/buttons.css");
+@import url("components/cards.css");     /* tarjetas en 3 columnas y chips */
+@import url("components/plans.css");     /* planes y servicios puntuales */
+@import url("components/faq.css");
+@import url("components/charts.css");    /* gráficos de línea y barras */
+@import url("components/intro-loader.css");
+
+/* Secciones animadas */
+@import url("sections/hero.css");
+@import url("sections/text-reveal.css");
+@import url("sections/photo-float.css");
+@import url("sections/stats.css");
+@import url("sections/horizontal-cards.css");
+@import url("sections/stacked-cards.css");
+@import url("sections/photo-expand.css");
+@import url("sections/cta.css");
+
+/* Específico de páginas */
+@import url("pages/servicios.css");      /* detalle de servicios y embudo */
+@import url("pages/contacto.css");       /* datos, formulario y avatar */
+
+/* Ajustes para celular y tablet (siempre al final) */
+@import url("base/responsive.css");

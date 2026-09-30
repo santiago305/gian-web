@@ -1,0 +1,6 @@
+/* ===== CTA FINAL ===== */
+.cta{background:var(--negro);text-align:center;padding:130px 22px 160px;position:relative;overflow:hidden}
+.cta .halo{transform:translate(-50%,-50%);opacity:.8}
+.cta h2{font-size:clamp(3.6rem,13vw,10.5rem);letter-spacing:-.06em;position:relative}
+.cta p{font-size:clamp(1.15rem,2vw,1.5rem);color:rgba(245,242,234,.7);margin:22px auto 40px;max-width:560px;position:relative}
+.cta .btns{position:relative}

@@ -1,0 +1,24 @@
+/* ===== CONTACTO ===== */
+.contact{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:start}
+.c-list{display:grid;gap:14px}
+.c-item{display:flex;align-items:center;gap:18px;padding:22px 24px;border-radius:22px;background:var(--carbon);border:1px solid rgba(255,255,255,.06);transition:border-color .4s,transform .5s var(--ease)}
+.c-item:hover{border-color:var(--naranja);transform:translateX(6px)}
+.c-item .ic{flex:none;width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:rgba(255,90,31,.14);color:var(--naranja)}
+.c-item .ic svg{width:22px;height:22px}
+.c-item small{display:block;color:var(--gris);font-size:.8rem}
+.c-item b{font-weight:600;font-size:1.05rem}
+.form{background:var(--blanco);color:var(--negro);border-radius:32px;padding:40px}
+.form h3{font-size:1.8rem;margin-bottom:6px}
+.form>p{opacity:.65;margin-bottom:26px}
+.field{display:grid;gap:7px;margin-bottom:16px}
+.field label{font-size:.85rem;font-weight:600}
+.field input,.field select,.field textarea{font:inherit;font-size:1rem;padding:14px 16px;border-radius:14px;border:1.5px solid #DDD8CC;background:#fff;color:var(--negro);transition:border-color .3s,box-shadow .3s;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--naranja);box-shadow:0 0 0 4px rgba(255,90,31,.14)}
+.field textarea{min-height:110px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form .btn{width:100%;margin-top:8px}
+.form small.hint{display:block;margin-top:12px;text-align:center;opacity:.55;font-size:.82rem}
+
+/* ===== AVATAR (contacto) ===== */
+.avatar{width:96px;height:96px;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 50% 80%,rgba(255,90,31,.55),var(--carbon) 70%);margin-bottom:18px;border:1px solid rgba(255,255,255,.1)}
+.avatar img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;transform:scale(1.5);transform-origin:50% 20%}
